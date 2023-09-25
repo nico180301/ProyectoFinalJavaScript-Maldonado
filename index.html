@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Piedra, papel o tijeras!</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>¡Bienvenido!</h1>
+        <p>vamos a jugar piedra, papel o tijeras</p>
+    </header>
+    <main>
+        <h2 class="instrucciones" id="instrucciones">
+            ¡Esto es al mejor de 3!
+        </h2>
+        <div class="selecciona-las-opciones" id="selecciona-una-opcion">
+            <h3>Selecciona una de las opciones</h3>
+            <div class="opciones">  
+                <button class="opcion" id="piedra🪨">🪨</button>
+                <button class="opcion" id="papel📋">📋</button>
+                <button class="opcion" id="tijeras✂️">✂️</button>
+            </div>
+        </div>
+
+        <div class="marcador">
+            <p class="nombre nombre-jugador" id="player-form">Jugador</p>
+            <p class="nombre nombre-computadora">Computadora</p>
+            <p class="puntos">
+                <span id="puntos-usuario">0</span>
+                <span>-</span>
+                <span id="puntos-computadora">0</span>
+            </p>
+        </div>
+
+        <div class="mensaje disabled  " id="mensaje">
+            <p>
+                Usaste <span class="eleccion" id="eleccion-usuario">papel📋</span><br>
+                y la computadora usó <span class="eleccion" id="eleccion-computadora">piedra🪨</span>
+            </p>
+            <p id="gana-punto">¡Ganaste un punto!</p>
+        </div>
+
+        
+
+    </div>
+
+    </main>
+
+    <!-- Incluir el archivo storage.js -->
+    <script type="module" src="./js/storage.js"></script>
+
+    <!-- Incluir el archivo app.js como un módulo de JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="./js/app.js"></script>
+    
+
+</body>
+</html>

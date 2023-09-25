@@ -44,7 +44,7 @@ function iniciarTurno(e) {
         const eleccionUsuario = e.currentTarget.id;
 
         // Identificadores más simples: "piedra", "papel" y "tijera"
-        const opciones = ["piedra🪨", "papel📋", "tijeras✂️"];
+        const opciones = ["piedra✊", "papel📋", "tijeras✂️"];
 
         // Validar entrada numérica
         if (!opciones.includes(eleccionUsuario)) {
